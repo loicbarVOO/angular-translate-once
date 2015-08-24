@@ -24,7 +24,7 @@
   function TranslateOnceAttributeDirective (attribute, $parse, $translate) {
     var namedDirective = getNamedDirectiveFromAttribute(attribute);
     return {
-      restrict: 'A',
+      restrict: 'AE',
       priority: -2,
       link: function (scope, element, attrs) {
         var translateValues = {};
